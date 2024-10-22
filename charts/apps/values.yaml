@@ -4,3 +4,5 @@ spec:
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
+    password: SHA256:5EWtvaQ2KCmrDWC7XaB/ZMw02nNAV1h3ZbnZLQ84BaY
+    username: not-used
