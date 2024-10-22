@@ -28,6 +28,6 @@ spec:
     # secrets+age-import://<key-volume-mount>/<key-name>.txt?<relative/path/to/the/encrypted/secrets.yaml>
     helm:
       valueFiles:
-        - ./values.yaml
+        - values.yaml
   syncPolicy:
     automated: {}
