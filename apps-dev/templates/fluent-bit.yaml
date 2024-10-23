@@ -18,5 +18,4 @@ spec:
       valueFiles:
       - values-dev.yaml
   syncPolicy:
-    automated:
-      selfHeal: true
+    automated: {}
