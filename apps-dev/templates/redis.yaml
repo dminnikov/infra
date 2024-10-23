@@ -22,8 +22,8 @@ spec:
   syncPolicy:
     syncOptions:
     - ApplyOutOfSyncOnly=true
-operation:
-    sync:
-      syncStrategy:
-        apply:
-          force: true
+# operation:
+#     sync:
+#       syncStrategy:
+#         apply:
+#           force: true
