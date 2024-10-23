@@ -11,4 +11,4 @@ spec:
   source:
     repoURL: https://github.com/dminnikov/infra
     chart: postgresql
-    targetRevision: HEAD
+    targetRevision: 17.0.0

@@ -11,4 +11,4 @@ spec:
   source:
     repoURL: https://github.com/dminnikov/infra
     chart: redis
-    targetRevision: HEAD
+    targetRevision: 7.4.1

@@ -11,4 +11,4 @@ spec:
   source:
     repoURL: https://github.com/dminnikov/infra
     chart: kafka
-    targetRevision: HEAD
+    targetRevision: 3.8.0
