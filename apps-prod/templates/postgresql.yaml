@@ -7,18 +7,15 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: dev
+    namespace: prod
     server: https://kubernetes.default.svc
   project: default
   source:
     repoURL: https://github.com/dminnikov/infra
     path: postgresql
-    targetRevision: HEAD
+    targetRevision: release_2
     helm:
       valueFiles:
-      - values-dev.yaml
-operation:
-    sync:
-      syncStrategy:
-        apply:
-          force: true
+      - values-prod.yaml
+  syncPolicy:
+    automated: {}

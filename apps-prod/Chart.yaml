@@ -1,5 +1,5 @@
 apiVersion: v2
-name: apps-dev
-description: Applications for dev project
+name: apps-prod
+description: Applications for prod project
 version: 0.1.0
 appVersion: "1.0"

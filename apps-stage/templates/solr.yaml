@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: postgresql
+  name: solr
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/dminnikov/infra
-    path: postgresql
+    path: solr
     targetRevision: release_1
     helm:
       valueFiles:

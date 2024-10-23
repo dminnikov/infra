@@ -1,7 +1,7 @@
 spec:
   source:
     repoURL: https://github.com/dminnikov/infra.git
-    targetRevision: HEAD
+    targetRevision: release_1
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: stage
