@@ -18,10 +18,5 @@ spec:
       valueFiles:
       - values-dev.yaml
   syncPolicy:
-    syncOptions:
-    - ApplyOutOfSyncOnly=true
-# operation:
-#     sync:
-#       syncStrategy:
-#         apply:
-#           force: true
+    automated:
+      selfHeal: true
