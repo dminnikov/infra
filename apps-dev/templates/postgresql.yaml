@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
-  project: dev-stand
+  project: dev-stands2h6t
   source:
     repoURL: https://github.com/dminnikov/infra
     chart: postgresql
