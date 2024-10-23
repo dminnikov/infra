@@ -716,7 +716,7 @@ primary:
     ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
     ##
     nodePorts:
-      postgresql: ""
+      postgresql: "30889"
     ## @param primary.service.clusterIP Static clusterIP or None for headless services
     ## e.g:
     ## clusterIP: None
@@ -836,7 +836,7 @@ readReplicas:
   name: read
   ## @param readReplicas.replicaCount Number of PostgreSQL read only replicas
   ##
-  replicaCount: 2
+  replicaCount: 1
   ## @param readReplicas.extendedConfiguration Extended PostgreSQL read only replicas configuration (appended to main or default configuration)
   ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
   ##
