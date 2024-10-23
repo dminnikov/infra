@@ -17,6 +17,9 @@ spec:
     helm:
       valueFiles:
       - values-dev.yaml
+  syncPolicy:
+    syncOptions:
+    - ApplyOutOfSyncOnly=true
 operation:
     sync:
       syncStrategy:
