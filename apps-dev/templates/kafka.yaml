@@ -16,3 +16,6 @@ spec:
     repoURL: https://github.com/dminnikov/infra
     path: kafka
     targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - ApplyOutOfSyncOnly=true
