@@ -16,8 +16,8 @@ spec:
     repoURL: https://github.com/dminnikov/infra
     path: postgresql
     targetRevision: HEAD
-operation:
-    sync:
-      syncStrategy:
-        apply:
-          force: true
+# operation:
+#     sync:
+#       syncStrategy:
+#         apply:
+#           force: true
