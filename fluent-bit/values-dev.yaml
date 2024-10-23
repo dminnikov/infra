@@ -165,7 +165,7 @@ automountServiceAccountToken: true
 hostAliases: []
 ## @param replicaCount Number of Fluent Bit replicas
 ##
-replicaCount: 1
+replicaCount: 3
 ## Configure extra options for container's liveness, readiness and startup probes
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes
 ## @param livenessProbe.enabled Enable livenessProbe on nodes
