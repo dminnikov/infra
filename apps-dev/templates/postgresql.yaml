@@ -8,6 +8,6 @@ spec:
     server: https://kubernetes.default.svc
   project: dev
   source:
-    path: postgresql
+    path: /postgresql
     repoURL: https://github.com/dminnikov/infra.git
     targetRevision: HEAD

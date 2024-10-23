@@ -8,6 +8,6 @@ spec:
     server: https://kubernetes.default.svc
   project: dev
   source:
-    path: redis
+    path: /redis
     repoURL: https://github.com/dminnikov/infra.git
     targetRevision: HEAD
