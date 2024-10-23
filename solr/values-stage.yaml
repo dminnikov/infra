@@ -1165,7 +1165,7 @@ zookeeper:
     client: 2181
   ## @param zookeeper.replicaCount Number of ZooKeeper nodes
   ##
-  replicaCount: 2
+  replicaCount: 1
   ## ZooKeeper Persistence parameters
   ## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
   ## @param zookeeper.persistence.enabled Enable persistence on ZooKeeper using PVC(s)
