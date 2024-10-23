@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: fluent-bit-dev
+  name: jaeger-prod
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: dev
+    namespace: prod
     server: https://kubernetes.default.svc
   project: default
   source:
     repoURL: https://github.com/dminnikov/infra
-    path: fluent-bit
-    targetRevision: HEAD
+    path: jaeger
+    targetRevision: release_2
     helm:
       valueFiles:
-      - values-dev.yaml
+      - values-prod.yaml
   syncPolicy:
     automated: {}
