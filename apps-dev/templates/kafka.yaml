@@ -16,7 +16,7 @@ spec:
     repoURL: https://github.com/dminnikov/infra
     path: kafka
     targetRevision: HEAD
-  operation:
+operation:
     sync:
       syncStrategy:
         apply:
