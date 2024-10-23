@@ -16,6 +16,9 @@ spec:
     repoURL: https://github.com/dminnikov/infra
     path: redis
     targetRevision: HEAD
+    helm:
+      valueFiles:
+      - values-dev.yaml
 # operation:
 #     sync:
 #       syncStrategy:
