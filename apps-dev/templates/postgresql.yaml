@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: postgresql
   namespace: argocd
-  annotations:
-    argocd.argoproj.io/sync-options: Force=true
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -16,8 +14,11 @@ spec:
     repoURL: https://github.com/dminnikov/infra
     path: postgresql
     targetRevision: HEAD
-# operation:
-#     sync:
-#       syncStrategy:
-#         apply:
-#           force: true
+    helm:
+      valueFiles:
+      - values-dev.yaml
+operation:
+    sync:
+      syncStrategy:
+        apply:
+          force: true
