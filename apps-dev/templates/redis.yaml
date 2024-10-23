@@ -10,5 +10,5 @@ spec:
   project: dev-stands2h6t
   source:
     repoURL: https://github.com/dminnikov/infra
-    chart: redis
-    targetRevision: 7.4.1
+    path: redis
+    targetRevision: HEAD

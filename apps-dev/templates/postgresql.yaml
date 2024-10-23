@@ -10,5 +10,5 @@ spec:
   project: dev-stands2h6t
   source:
     repoURL: https://github.com/dminnikov/infra
-    chart: postgresql
-    targetRevision: 17.0.0
+    path: postgresql
+    targetRevision: HEAD

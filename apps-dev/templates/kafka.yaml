@@ -10,5 +10,5 @@ spec:
   project: dev-stands2h6t
   source:
     repoURL: https://github.com/dminnikov/infra
-    chart: kafka
-    targetRevision: 3.8.0
+    path: kafka
+    targetRevision: HEAD
