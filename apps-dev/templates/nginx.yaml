@@ -7,13 +7,17 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
-    path: nginx
-    repoURL: https://github.com/dminnikov/infra  # note: the oci:// syntax is not included.
-    targetRevision: HEAD
+  sources:
+  - chart: nginx
+    repoURL: registry-1.docker.io/bitnamicharts  # note: the oci:// syntax is not included.
+    targetRevision: 18.2.4
     helm:
       valueFiles:
       - values.yaml
+      - $values/values/nginx-values.yaml
+  - repoURL: 'https://github.com/dminnikov/infra.git'
+    targetRevision: dev
+    ref: values
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
