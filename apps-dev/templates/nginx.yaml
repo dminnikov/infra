@@ -13,7 +13,6 @@ spec:
     targetRevision: 18.2.4
     helm:
       valueFiles:
-      - values.yaml
       - $values/values/nginx-values.yaml
   - repoURL: 'https://github.com/dminnikov/infra.git'
     targetRevision: HEAD
