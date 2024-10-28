@@ -20,3 +20,5 @@ spec:
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
+  syncPolicy:
+    automated: {}
