@@ -16,7 +16,7 @@ spec:
       - values.yaml
       - $values/values/nginx-values.yaml
   - repoURL: 'https://github.com/dminnikov/infra.git'
-    targetRevision: dev
+    targetRevision: HEAD
     ref: values
   destination:
     namespace: dev
