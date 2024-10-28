@@ -8,12 +8,12 @@ metadata:
 spec:
   project: default
   source:
-    chart: nginx
-    repoURL: registry-1.docker.io/bitnamicharts  # note: the oci:// syntax is not included.
-    targetRevision: 15.9.0
+    path: nginx
+    repoURL: https://github.com/dminnikov/infra  # note: the oci:// syntax is not included.
+    targetRevision: HEAD
     helm:
       valueFiles:
-      - https://github.com/dminnikov/infra/blob/main/values/nginx-values.yaml
+      - values.yaml
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
