@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-      - /nginx/values.yaml
+      - values.yaml
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
